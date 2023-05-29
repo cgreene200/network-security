@@ -2,7 +2,7 @@
 
 ![alt text](https://i.imgur.com/LLLsARj.png)
 
-# **Lab Exercise Projects**:
+# **Lab Exercise Project**:
 # In this tutorial we will practice performing activities on a network in an Azure virtual environment.
 # We will see the actual raw traffic being transmitted between the 2 virtual machines. I hope this gives a better understanding of firewalls.
 
@@ -23,37 +23,43 @@
 * Windows 10
 * Linux [Ubuntu]
 
-## What this exercise will show?
+## What these exercises will show?
 
  1. This tutorial will go over the basics of using Wireshark packet analyzer
  1. We will be working with 2 Azure VM's (one running Windows 10 and the other running Linux [Ubuntu]
  2. We will be working with Azure's network security group or it's firewall
  3. We'll be watching raw traffic 
  
- 
-![alt text](https://i.imgur.com/W0IMQx3.png)
-
 ## 1.  How can we start scanning for network data packets?
-As the **above image** shows, select the adapter device that will capture the packets.  Afterwards, select the "blue shark fin" in the
+As the **image below** shows, select the adapter device that will capture the packets.  Afterwards, select the "blue shark fin" in the
 upper left-hand corner. Press this icon to start capturing the data packets.
 
+![alt text](https://i.imgur.com/W0IMQx3.png)
+
+
+## 2. How to find traffic that is unencrypted?
+
+As we can see in the **image below**, one way unencrypted data can be found is by clicking on Internet Control Message Protocol
+and going through data in this area.
 
 ![alt text](https://i.imgur.com/p7TdjWl.png)
 
-## 2. How to find traffic that is unencrypted?
-As we can see in the **above image**, one way unencrypted data can be found is by clicking on Internet Control Message Protocol
-and going through data in this area.
+## 3. How can we start filtering Wireshark using **ICMP** protocol?
+As shown in the **image below**, we can do this by typing the **ICMP** protocol in the filter area.
 
 ![alt text](https://i.imgur.com/UYIwtLR.png)
-## 3. How can we start filtering Wireshark using **ICMP** protocol?
-As shown in the **above image**, we can do this by typing the **ICMP** protocol in the filter area.
 
-![alt text](https://i.imgur.com/mpEwgdF.png)
-## 4. Using the image above, we can see everything in action using the **ICMP** protocol and the **Ping** and IP address through **PowerShell**.
+
+## 4. Using the image below, we can see everything in action using the **ICMP** protocol and the **Ping** and IP address through **PowerShell**.
 After adding **ICMP** as a filter, open **PoweShell** and **ping 10.0.0.5** the (VM-2 IP address), as shown above.
 
+![alt text](https://i.imgur.com/mpEwgdF.png)
+
+
+## 5. As we can see in the image below, a "Continuous Ping" response between VM-1 and VM-2 by using the "ping -t" command.
+
 ![alt text](https://i.imgur.com/Fw2tvDx.png)
-## 5. As we can see in the image above, a "Continuous Ping" response between VM-1 and VM-2 by using the "ping -t" command.
+
 
 ## 6. While still using the **Continuous Ping** between VM-1 and VM-2, how can we **Block ICMP** traffic from coming through the VM-2 firewall?
 
