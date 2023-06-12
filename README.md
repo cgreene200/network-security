@@ -3,8 +3,8 @@
 ![alt text](https://i.imgur.com/LLLsARj.png)
 
 # **Lab Exercise Project**:
-# In this tutorial we will practice performing activities on a network in an Azure virtual environment.
-# We will see the actual raw traffic being transmitted between the 2 virtual machines. I hope this gives a better understanding of firewalls.
+## In this tutorial we will practice performing activities on a network in an Azure virtual environment.
+## We will see the actual raw traffic being transmitted between the 2 virtual machines. I hope this gives a better understanding of firewalls.
 
 ## What Azure resources will we be working with?
 
