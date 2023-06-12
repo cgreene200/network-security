@@ -42,7 +42,7 @@ upper left-hand corner. Press this icon to start capturing the data packets.
 As we can see in the **image below**, one way unencrypted data can be found is by clicking on Internet Control Message Protocol
 and going through data in this area.
 
-![alt text](https://i.imgur.com/p7TdjWl.png)
+![alt text](https://i.imgur.com/Rf4mdHE.png)
 
 ## 3. How can we start filtering Wireshark using **ICMP** protocol?
 As shown in the **image below**, we can do this by typing the **ICMP** protocol in the filter area.
@@ -53,12 +53,12 @@ As shown in the **image below**, we can do this by typing the **ICMP** protocol 
 ## 4. Using the image below, we can see everything in action using the **ICMP** protocol and the **Ping** and IP address through **PowerShell**.
 After adding **ICMP** as a filter, open **PoweShell** and **ping 10.0.0.5** the (VM-2 IP address), as shown above.
 
-![alt text](https://i.imgur.com/mpEwgdF.png)
+![alt text](https://i.imgur.com/45rT4k7.png)
 
 
 ## 5. As we can see in the image below, a "Continuous Ping" response between VM-1 and VM-2 by using the "ping -t" command.
 
-![alt text](https://i.imgur.com/Fw2tvDx.png)
+![alt text](https://i.imgur.com/owdKGzE.png)
 
 
 ## 6. While still using the **Continuous Ping** between VM-1 and VM-2, how can we **Block ICMP** traffic from coming through the VM-2 firewall?
@@ -70,20 +70,19 @@ After adding **ICMP** as a filter, open **PoweShell** and **ping 10.0.0.5** the 
 
 ## 8. Now, let's monitor this rule change, as seen below:
 
-![alt text](https://i.imgur.com/N8kwOm0.png)
+![alt text](https://i.imgur.com/tnkxn3j.png)
 ## 9. We now see that the "continuous" ping has started "timing out", as shown above.
 
 ## 10. Now, let's show the example of changing the **Inbound Security Rule** back to "ALLOWING" Continuous Ping traffic through VM-2 firewall, as shown below.
 ![alt text](https://i.imgur.com/M5jxx6J.png)
 
 ## 11. Now, let's monitor the captured traffic as the **Inbound ICMP** port is reopened, allowing data to come through VM-2 firewall once again as the data goes from "Request Timed Out" to "Reply from 10.0.0", as shown below.
-![alt text](https://i.imgur.com/GhcYD2k.png)
+![alt text](https://i.imgur.com/CrCHAdf.png)
 
 
 ## 12. Show how we can use **NSLOOKUP** to find the IP address of www.google.com
 
-![alt text](https://i.imgur.com/BgIH8S2.png)
-
+![alt text](https://i.imgur.com/cF3Lf3W.png)
 
 
 
